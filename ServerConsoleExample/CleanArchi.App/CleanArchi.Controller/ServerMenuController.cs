@@ -18,15 +18,29 @@ namespace CleanArchi.Controller
         public void HandleInput()
         {
             InputInfo = Console.ReadKey();
-            
 
-            if(InputInfo.KeyChar == '1')
+
+            if (InputInfo.KeyChar == '1')
             {
                 Menu.CleanMenu();
                 Menu.ShowMenu();
                 Menu.ShowStatus();
             }
-            else if(InputInfo.KeyChar == '2')
+            else if (InputInfo.KeyChar == '2')
+            {
+                Menu.StartServer();
+                Menu.CleanMenu();
+                Menu.ShowMenu();
+                Menu.ShowStatus();
+            }
+            else if(InputInfo.KeyChar == '3')
+            {
+                Menu.StopServer();
+                Menu.CleanMenu();
+                Menu.ShowMenu();
+                Menu.ShowStatus();
+            }
+            else if(InputInfo.KeyChar == '4')
             {
                 Menu.CleanMenu();
                 Menu.ShowMenu();

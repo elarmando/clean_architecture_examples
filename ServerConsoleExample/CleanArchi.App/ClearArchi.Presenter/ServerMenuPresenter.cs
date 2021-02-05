@@ -18,7 +18,9 @@ namespace CleanArchi.Presenter
             var header = "Welcome to " + server.Name;
             var options = new List<string>() {
                 "1.- Show Status",
-                "2.- Clear"
+                "2.- Start Server",
+                "3.- Stop Server",
+                "4.- Clear"
                 
             };
 

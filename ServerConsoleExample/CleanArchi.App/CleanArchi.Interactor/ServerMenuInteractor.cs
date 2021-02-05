@@ -28,5 +28,15 @@ namespace CleanArchi.Interactor
         {
             Menu.ShowStatus(Server);
         }
+
+        public void StartServer()
+        {
+            Server.Start();
+        }
+
+        public void StopServer()
+        {
+            Server.Stop();
+        }
     }
 }
